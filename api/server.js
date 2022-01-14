@@ -1,4 +1,5 @@
 const express = require('express');
+const { mod } = require('prelude-ls');
 
 
 const server = express();
@@ -25,3 +26,5 @@ const server = express();
         res.status(500).json({message: 'error'})
     }
 })
+
+module.exports = server;

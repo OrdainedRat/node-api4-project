@@ -4,6 +4,10 @@ const express = require('express');
 
 const server = express();
 server.use(express.json())
+
+server.get('/', (req, res) => {
+    res.send(`<h1>Howdy Partner<h1>`)
+})
  
  
 server.get('/api/users', (req, res) => {
